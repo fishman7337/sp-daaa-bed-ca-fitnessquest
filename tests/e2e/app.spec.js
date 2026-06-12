@@ -19,7 +19,7 @@ test("landing, login, and dashboard render", async ({ page }) => {
   await expect(
     page.getByRole("heading", { name: "Command centre" }),
   ).toBeVisible();
-  await expect(page.getByText("John Doe")).toBeVisible();
+  await expect(page.getByRole("heading", { name: "John Doe" })).toBeVisible();
 });
 
 test("challenge and review flow works", async ({ page }) => {
