@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Pets</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/pets.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="homepage.html">Home</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="enemies.html">Enemies</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="layout-two">
+        <div>
+          <p class="eyebrow">Companions</p>
+          <h1>Pets</h1>
+          <p class="lede">
+            Create, feed, and level pets that belong only to the signed-in user.
+          </p>
+          <div class="grid section" id="pet-list"></div>
+        </div>
+        <aside class="form-panel">
+          <h2 id="selected-pet">Select a pet</h2>
+          <p id="selected-pet-meta">Pet details will appear here.</p>
+          <form id="create-pet-form">
+            <label
+              >Pet name <input id="pet-name" maxlength="50" required
+            /></label>
+            <button class="primary" type="submit">Create pet</button>
+          </form>
+          <label>
+            Food item
+            <select id="food-select"></select>
+          </label>
+          <div class="actions">
+            <button id="feed-pet" type="button">Feed</button>
+            <button id="level-pet" type="button">Level up</button>
+          </div>
+          <p class="status" id="pet-status"></p>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

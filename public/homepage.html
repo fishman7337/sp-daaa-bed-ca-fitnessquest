@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Dashboard</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/home.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="challenge.html">Challenges</a>
+          <a href="enemies.html">Enemies</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="pet.html">Pets</a>
+          <a href="quest.html">Quests</a>
+          <a href="achievement.html">Achievements</a>
+          <a href="users.html">Users</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="hero-grid">
+        <div>
+          <p class="eyebrow">ST0503 CA2</p>
+          <h1>Command centre</h1>
+          <p class="lede">
+            Track your profile, leaderboard ranking, and the core FitnessQuest
+            systems.
+          </p>
+        </div>
+        <aside class="panel">
+          <h2 id="profile-name">Player</h2>
+          <p>Level: <strong id="profile-level">-</strong></p>
+          <p>Skillpoints: <strong id="profile-skillpoints">-</strong></p>
+          <p>Currency: <strong id="profile-currency">-</strong></p>
+          <p>Quests completed: <strong id="profile-quests">-</strong></p>
+          <p>Battles won: <strong id="profile-battles">-</strong></p>
+          <button id="level-up" type="button">Level up</button>
+          <p class="status" id="profile-status"></p>
+        </aside>
+      </section>
+      <section class="section">
+        <h2>Leaderboard</h2>
+        <div id="leaderboard"></div>
+      </section>
+      <section class="section">
+        <h2>Game systems</h2>
+        <div class="grid" id="feature-grid"></div>
+      </section>
+    </main>
+  </body>
+</html>

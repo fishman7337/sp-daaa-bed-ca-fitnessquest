@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Achievements</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/achievements.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="homepage.html">Home</a>
+          <a href="quest.html">Quests</a>
+          <a href="challenge.html">Challenges</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <p class="eyebrow">Progression</p>
+      <h1>Achievements</h1>
+      <p class="lede">
+        Claim achievements only when your signed-in profile meets the
+        requirements.
+      </p>
+      <p class="status" id="achievement-status"></p>
+      <section class="layout-two section">
+        <div>
+          <h2>Available</h2>
+          <div class="grid" id="achievement-list"></div>
+        </div>
+        <aside class="panel">
+          <h2>Claimed</h2>
+          <div class="grid" id="claimed-list"></div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

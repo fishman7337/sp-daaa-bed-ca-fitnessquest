@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Login</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/auth.js"></script>
+  </head>
+  <body>
+    <main class="auth-wrap">
+      <section class="auth-grid">
+        <form class="form-panel" id="login-form">
+          <p class="eyebrow">Welcome back</p>
+          <h1>Sign in</h1>
+          <label>
+            Username
+            <input
+              id="username"
+              name="username"
+              autocomplete="username"
+              required
+            />
+          </label>
+          <label>
+            Password
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            />
+          </label>
+          <button class="primary" type="submit">Login</button>
+          <p class="status" id="login-status"></p>
+          <a href="index.html">Back to start</a>
+        </form>
+        <form class="form-panel" id="register-form">
+          <p class="eyebrow">New player</p>
+          <h1>Create account</h1>
+          <label>
+            Username
+            <input
+              name="username"
+              autocomplete="username"
+              minlength="1"
+              maxlength="50"
+              required
+            />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Password
+            <input
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </label>
+          <label>
+            Confirm password
+            <input
+              name="confirmPassword"
+              type="password"
+              autocomplete="new-password"
+              minlength="8"
+              required
+            />
+          </label>
+          <button class="primary" type="submit">Register</button>
+          <p class="status" id="register-status"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

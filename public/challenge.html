@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Challenges</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/challenges.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="homepage.html">Home</a>
+          <a href="inventory.html">Inventory</a>
+          <a href="pet.html">Pets</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="layout-two">
+        <div>
+          <p class="eyebrow">Fitness challenges</p>
+          <h1>Challenges</h1>
+          <p class="lede">
+            Create, complete, review, and manage workout challenges.
+          </p>
+          <div class="grid section" id="challenge-list"></div>
+        </div>
+        <aside class="form-panel">
+          <h2>Create challenge</h2>
+          <form id="create-form">
+            <label
+              >Challenge <textarea id="create-challenge" required></textarea>
+            </label>
+            <label
+              >Skillpoints
+              <input
+                id="create-skillpoints"
+                type="number"
+                min="0"
+                max="1000"
+                required
+            /></label>
+            <button class="primary" type="submit">Create</button>
+            <p class="status" id="create-status"></p>
+          </form>
+        </aside>
+      </section>
+      <section class="layout-two section">
+        <div class="panel">
+          <h2 id="selected-title">Select a challenge</h2>
+          <p id="selected-meta">Challenge details will appear here.</p>
+          <h3>Attempts</h3>
+          <div class="grid" id="completion-list"></div>
+          <h3>Reviews</h3>
+          <div class="grid" id="review-list"></div>
+        </div>
+        <aside class="form-panel">
+          <h2>Actions</h2>
+          <form id="complete-form">
+            <label>
+              Completed
+              <select id="complete-value">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </label>
+            <label>Notes <textarea id="complete-notes"></textarea></label>
+            <button type="submit">Record attempt</button>
+          </form>
+          <form id="update-form">
+            <label
+              >Challenge <textarea id="update-challenge" required></textarea>
+            </label>
+            <label
+              >Skillpoints
+              <input
+                id="update-skillpoints"
+                type="number"
+                min="0"
+                max="1000"
+                required
+            /></label>
+            <button type="submit">Update challenge</button>
+          </form>
+          <button class="danger" id="delete-challenge" type="button">
+            Delete challenge
+          </button>
+          <p class="status" id="action-status"></p>
+          <form id="review-form">
+            <label
+              >Review rating
+              <input id="review-amount" type="number" min="1" max="5" required
+            /></label>
+            <button type="submit">Save review</button>
+            <p class="status" id="review-status"></p>
+          </form>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

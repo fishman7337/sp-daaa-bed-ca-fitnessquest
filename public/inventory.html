@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Inventory</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/inventory.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="homepage.html">Home</a>
+          <a href="challenge.html">Challenges</a>
+          <a href="pet.html">Pets</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="layout-two">
+        <div>
+          <p class="eyebrow">Catalog</p>
+          <h1>Inventory</h1>
+          <p class="lede">
+            Buy, sell, and use items without exposing another user's inventory.
+          </p>
+          <h2 class="section">Shop</h2>
+          <div class="grid" id="item-list"></div>
+        </div>
+        <aside class="form-panel">
+          <h2 id="selected-item">Select an item</h2>
+          <p id="selected-item-meta">Item details will appear here.</p>
+          <form id="inventory-action-form">
+            <label>
+              Action
+              <select name="mode">
+                <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
+                <option value="use">Use</option>
+              </select>
+            </label>
+            <label
+              >Quantity
+              <input name="quantity" type="number" min="1" value="1" required
+            /></label>
+            <button class="primary" type="submit">Apply</button>
+            <p class="status" id="inventory-status"></p>
+          </form>
+        </aside>
+      </section>
+      <section class="section">
+        <h2>Your items</h2>
+        <div class="grid" id="inventory-list"></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitnessQuest | Enemies</title>
+    <link rel="icon" type="image/png" href="./assets/Image/DAAA-logo.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/pages/enemies.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="homepage.html"
+          ><span class="brand-mark">FQ</span> FitnessQuest</a
+        >
+        <nav class="nav-links">
+          <a href="homepage.html">Home</a>
+          <a href="pet.html">Pets</a>
+          <a href="quest.html">Quests</a>
+          <a href="#" data-logout>Logout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-shell">
+      <section class="layout-two">
+        <div>
+          <p class="eyebrow">Battle arena</p>
+          <h1>Enemies</h1>
+          <p class="lede">
+            Pick your pet, target an enemy, and record a battle result.
+          </p>
+          <div class="grid section" id="enemy-list"></div>
+        </div>
+        <aside class="form-panel">
+          <h2 id="selected-enemy">Select an enemy</h2>
+          <form id="fight-form">
+            <label>
+              Pet
+              <select id="pet-select"></select>
+            </label>
+            <button class="primary" type="submit">Fight</button>
+            <p class="status" id="battle-status"></p>
+          </form>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
