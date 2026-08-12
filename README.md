@@ -11,6 +11,15 @@ Project context:
 - Course: Diploma in Applied AI and Analytics
 - Academic period: AY2024/2025 Semester 2
 
+## Evidence and interpretation
+
+| Evidence-backed measure | Current repository evidence                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| Executable test suite   | **6 API tests, 3 security tests, and 6 browser tests** cover desktop and mobile flows against MySQL 8.4. |
+| Dependency gate         | The current lockfile resolves to **0 npm audit vulnerabilities** after non-breaking transitive updates.  |
+
+The qualitative outcome is a tested Express/MySQL/JWT fitness application with validation, rate limiting, security headers, and end-to-end user journeys. Test coverage is evidence of exercised controls, not a guarantee that the application is vulnerability-free.
+
 ## Features
 
 - Secure registration and login with bcrypt password hashing and JWT auth.
