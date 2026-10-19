@@ -36,24 +36,24 @@
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "express-rate-limit": "^8.5.2",
-    "helmet": "^8.2.0",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
-    "mysql2": "^3.22.5",
-    "zod": "^4.4.3"
+    "mysql2": "^3.24.6",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
+    "@playwright/test": "^1.64.1",
     "cross-env": "^10.1.0",
-    "eslint": "^10.4.1",
+    "eslint": "^10.12.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-security": "^4.0.0",
-    "jest": "^30.4.2",
+    "eslint-plugin-security": "^4.2.0",
+    "jest": "^30.5.2",
     "nodemon": "^3.1.11",
-    "prettier": "^3.8.4",
-    "supertest": "^7.2.2"
+    "prettier": "^3.9.10",
+    "supertest": "^7.3.1"
   },
   "engines": {
     "node": ">=22"
